@@ -1,4 +1,5 @@
 # A note regarding TypeScript in these examples
+
 If you remove the buttonText prop from ExampleButton, you will receive an error.
 That's because buttonText is required in the interface defined in the component's file (ExampleProps).
 
