@@ -1,29 +1,21 @@
 # ts-react-base-template
 
-A base template for TypeScript React, with babel and webpack configured for immediate use
+A base template for TypeScript React, with babel and webpack configured for immediate use.
 
-# Rundown of software used
+## Rundown of software used
 
-## Dependencies
+### Dependencies
 
-### React & React-Dom
+- ***React & React-Dom***: core dependencies to work with React
+- ***@types/react & @types/react-dom***: objects that TypeScript uses to type-check React elements
 
-The core dependencies to work with React
+### DevDependencies
 
-### @types/react & @types/react-dom
-
-The objects that TypeScript uses to type-check React elements
-
-## DevDependencies
-
-### The four @babel/ items and babel-loader
-
-Babel turns our code into ES5 javaScript. This is used briefly in our `.babelrc` file, and mostly in our `webpack.config.js` file.
-
-### Prettier
-
-Prettier makes our code look great. Run with the `npm run pretty` command. Settings can be found in the `prettier.config.js` and `.prettierignore` files.
-
-### Webpack & Webpack-CLI
-
-Webpack turns our React TypeScript code into a readable bundle for browsers to use (with the help of Babel).
+- ***babel-loader & @babel/etc***: turns our TypeScript into ES5 with webpack
+- ***@types/express & @types/node***: objects that TypeScript uses to type-check server components
+- ***concurrently***: lets us run webpack and node in the same terminal
+- ***nodemon***: lets us update an active server on a file change
+- ***prettier***: makes our code pretty
+- ***ts-node***: the TypeScript version of `node`
+- ***typescript***: the core of TypeScript. Can optionally be installed globally
+- ***webpack & webpack-cli***: the core of React's compilation
